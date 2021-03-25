@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koronawirus - Polska/Włochy - Tabela</title>
+    <title>Koronawirus - Polska - Tabela</title>
     <link href="corona.css" rel="stylesheet" type="text/css" media="all" />
     <link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
@@ -112,7 +112,7 @@ while($wiersz= $rezultat->fetch_assoc())
 </table>
 </div>
 
-<section class="rectangle">2020 &copy; Krzysztof Kordecki - <a href='index.html' class='portfolio'>Portfolio!</a> <i class="icon-mail-alt"></i></section>
+<section class="rectangle">2021 &copy; Krzysztof Kordecki - <a href='index.html' class='portfolio'>Portfolio!</a> <i class="icon-mail-alt"></i></section>
 
 </section>
 </body>
