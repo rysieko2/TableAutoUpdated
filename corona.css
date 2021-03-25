@@ -1,0 +1,127 @@
+	html 
+       {
+		background-color: rgb(17, 17, 17);
+	
+		}
+	
+	table 
+       {
+		width: fullsize;
+  		max-width: 1200px;
+		margin: 0 auto;
+		font-family: "LiberationSans", "Arial";
+		border: 0px solid black;
+		background-color: rgb(39, 36, 36);
+		color: red;
+		padding-top: 0.00em;
+		padding-bottom: 0.00em;
+		padding-left: 0.05em;
+		padding-right: 0.05em;
+		font-size: 11pt;
+	}
+	#table{
+		background-color: rgb(17, 17, 17);
+	}
+	tr
+	{
+		color: rgb(255, 81, 0);
+		font-family: "LiberationSans", "Arial";
+	}
+	td
+	{
+		color: rgb(202, 187, 187);
+	}
+    th
+        {
+		font-family: "LiberationSans", "Arial";
+		border: 0px solid rgb(17, 17, 17);
+		background-color: rgb(56, 53, 53);
+		color: rgb(255, 81, 0);
+		padding-top: 0.0em;
+		padding-bottom: 0.0em;
+		padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+	.przyr{
+		border: 3px solid rgb(228, 112, 35);
+	}
+	.silver
+       {
+		background-color: rgb(56, 56, 56);
+		text-align: center;
+	}
+    .white
+        {
+		background-color: rgb(102, 99, 99);
+		text-align: center;
+	}
+	.rectangle
+	{
+		width: auto;
+		margin: 20px;
+		text-align: center;
+		color: rgb(202, 187, 187);
+	}
+	.portfolio{
+		color: #c9c6c6;
+	}
+	.portfolio:hover{
+		color: rgb(228, 112, 35);
+	}
+
+
+	.title{
+	  text-align: center;
+	  width: 100%;
+	  max-width: 600px;
+	  margin: 0 auto;
+	  font-family: "LiberationSans", "Arial";
+	  color: rgb(255, 81, 0);
+	  margin-top: 5px;
+	  text-align: center;
+	  font-size: 16px;
+	}
+#koronawirus{
+	width: 0px;
+	color: rgb(255, 81, 0);
+	font-size: 76px;
+	text-transform: uppercase;
+	align-items: center;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: rgb(17, 17, 17);;
+	border: 0px solid rgb(17, 17, 17);;
+
+	margin-top: 4px;
+
+
+
+}
+#zakazenia{
+	width: 0px;
+	color: rgb(255, 81, 0);
+	font-size:22px;
+	text-transform: uppercase;
+	align-items: center;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: rgb(17, 17, 17);;
+	border: 0px solid rgb(17, 17, 17);;
+	border: none
+	}
+	#korona{
+	
+		color: rgb(255, 81, 0);
+		font-size:70px;
+		text-transform: uppercase;
+		
+		font-family: "LiberationSans", "Arial";
+		background-color: rgb(17, 17, 17);;
+		border: 0px solid rgb(17, 17, 17);;
+		padding-top: 0em;
+		margin-top: 0em;
+		padding-bottom: 0em;
+		margin-bottom: 0em;
+		border: none
+	}
+	#all{
+		width: 100%;
+	}
