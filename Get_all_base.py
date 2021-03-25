@@ -1,7 +1,9 @@
 import requests
 import json
 import jsonpath
-import pymysql as mysql  # ładowanie biblioteki
+import pymysql as mysql
+from connect import *
+
 
 url = "https://api.covid19api.com/dayone/country/poland"
 response = requests.get(url)
@@ -57,10 +59,9 @@ for i in range(455):
     except IndexError:
         break
 
-con = mysql.Connect(host='127.0.0.1', unix_socket='', user='krzys2', passwd='kijwoko',
-                    db='corona_pl')  # łączenie się z bazą danych
-cur = con.cursor()  # tworzy obiekt, dzięki któremu będzie można wysyłać zapytania do bazy danych
-cur.execute("USE corona_pl")  # wybranie istniejącej bazy danych
+con = mysql.Connect(host=host, unix_socket=unix_socket, user=user, passwd=passwd, db=db)  # connecting with database
+cur = con.cursor()                                      # creating an object for querying the database
+cur.execute("USE {}".format(db))                        # selecting an existing database
 cur.execute("TRUNCATE TABLE zarazenia")
 
 zdate = date_tab
@@ -73,7 +74,8 @@ zwlPrz = oz_dn
 zwlZgo = ak_ra
 zwlZP = ak_dn
 
-loggit = """INSERT INTO zarazenia(date, plZar, plPrz, plZgo, plZP, wlZar, wlPrz, wlZgo, wlZP) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
+loggit = """INSERT INTO zarazenia(date, plZar, plPrz, plZgo, plZP, wlZar, wlPrz, wlZgo, wlZP)
+                           VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
 
 for i in range(0, len(date_tab)):
     date = zdate[i]
@@ -88,15 +90,3 @@ for i in range(0, len(date_tab)):
 
     cur.execute(loggit, (date, plZar, plPrz, plZgo, plZP, wlZar, wlPrz, wlZgo, wlZP))
 cur.close()
-
-
-
-
-
-
-
-
-
-
-
-
